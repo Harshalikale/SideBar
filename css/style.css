@@ -45,3 +45,61 @@ body{
 .menu-text{
     margin-left: 8px;
 }
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(31, 30, 30); 
+    color: white;
+    display: none;
+}
+.bottom-menu-icon{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px;
+}
+/*small Device */
+     @media screen  and (max-width:599){
+    .sidebar {
+        display: none;
+    }
+    .bottom{
+        display: block;
+    }
+    
+}
+
+      /* Mobile Devices */
+
+      @media screen and (min-width: 600px) and (max-width: 768px) {
+        .sidebar{
+            display: none;
+        }
+        .bottom{
+            display: block;
+        }
+       
+      }
+
+      /* Tablet Devices */
+
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+       
+      }
+
+      /* Dekstop device */
+
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+
+       .sidebar {
+        display: block;
+    }
+    .bottom {
+        display: none;
+    }
+
+      }
+
